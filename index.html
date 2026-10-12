@@ -1,120 +1,88 @@
-<img src="images/profile.jpg" alt="My photo" width="300">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the future of Artificial Intelligence and the idea of Super Intelligence. Join the AI to SI conversation.">
-  <title>AI → SI | The Future of Intelligence</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elonsreveswork — Executive Digital Presence</title>
+  <meta name="description" content="Executive-grade digital presence for a modern business brand. Elonsreveswork: leadership, credibility, strategic value.">
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #07111f;
-      color: #f4f7ff;
-      line-height: 1.7;
-    }
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #0c1b30;
-      border-bottom: 1px solid #203652;
-    }
-    .logo { font-size: 22px; font-weight: bold; color: #69e4ff; }
-    nav a { color: #f4f7ff; text-decoration: none; margin-left: 18px; }
-    .hero {
-      text-align: center;
-      padding: 90px 20px 75px;
-      background: radial-gradient(ellipse at top, #153c65, #07111f 70%);
-    }
-    .tag {
-      color: #69e4ff;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-    }
-    h1 { font-size: clamp(38px, 8vw, 70px); line-height: 1.12; margin: 20px 0; }
-    h1 span { color: #69e4ff; }
-    .hero p { max-width: 680px; margin: 0 auto 30px; color: #c4d3e8; font-size: 18px; }
-    .button {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 8px;
-      background: #69e4ff;
-      color: #07111f;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main { max-width: 1050px; margin: auto; padding: 50px 20px; }
-    h2 { font-size: 30px; margin-bottom: 12px; }
-    .intro { color: #c4d3e8; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin: 28px 0 50px; }
-    .card { background: #10223a; border: 1px solid #29415e; border-radius: 14px; padding: 24px; }
-    .card h3 { color: #69e4ff; margin-top: 0; }
-    .question { background: #10223a; border-radius: 14px; padding: 28px; border-left: 4px solid #69e4ff; }
-    footer { text-align: center; padding: 30px 15px; color: #aabbd0; border-top: 1px solid #203652; }
-    @media (max-width: 520px) {
-      header { padding: 18px; flex-wrap: wrap; gap: 10px; }
-      nav a { margin-left: 0; margin-right: 12px; font-size: 14px; }
-      .hero { padding-top: 65px; }
-    }
+    :root{--bg:#ffffff;--muted:#556084;--accent:#0b3b66;--panel:#f7f9fb;--max:1100px}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;color:var(--accent);margin:0;background:var(--bg)}
+    .container{max-width:var(--max);margin:48px auto;padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{font-weight:700;font-size:20px;color:var(--accent)}
+    .tag{color:var(--muted);font-size:13px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:36px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfdff);box-shadow:0 6px 24px rgba(11,59,102,0.06)}
+    h1{margin:0;font-size:32px;line-height:1.05;color:var(--accent)}
+    p.lead{margin:8px 0 0;color:var(--muted);font-size:16px}
+    .cta{display:inline-block;margin-top:18px;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    section{margin-top:28px}
+    h2{font-size:20px;margin-bottom:10px;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:var(--panel);padding:18px;border-radius:10px;border:1px solid rgba(11,59,102,0.04)}
+    footer{margin:48px 0 24px;color:var(--muted);font-size:14px;text-align:center}
+    @media (max-width:640px){.container{margin:20px;padding:16px}.hero{padding:20px}h1{font-size:24px}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">AI → SI</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#future">The Future</a>
-      <a href="#conversation">Join Us</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div>
+        <div class="brand">Elonsreveswork</div>
+        <div class="tag">Executive-grade digital presence</div>
+      </div>
+      <nav aria-label="primary">
+        <a href="#about" style="color:var(--muted);text-decoration:none;margin-left:18px">About</a>
+        <a href="#services" style="color:var(--muted);text-decoration:none;margin-left:18px">Services</a>
+        <a href="#contact" style="color:var(--muted);text-decoration:none;margin-left:18px">Contact</a>
+      </nav>
+    </header>
 
-  <section class="hero">
-    <div class="tag">A conversation about tomorrow</div>
-    <h1>From <span>AI</span><br>to <span>SI</span>?</h1>
-    <p>Artificial Intelligence is changing our world. Could the idea of Super Intelligence better express where this technology may lead?</p>
-    <a class="button" href="#conversation">Join the Conversation</a>
-  </section>
+    <main class="hero" role="main">
+      <div>
+        <h1>Executive-grade digital presence for a modern business brand</h1>
+        <p class="lead">Elonsreveswork is crafted to communicate leadership, credibility, and strategic value. A clean, efficient, and premium digital presence optimized for swift deployment and confident engagement.</p>
+        <a class="cta" href="#contact">Request a Consultation</a>
+      </div>
+    </main>
 
-  <main>
     <section id="about">
-      <h2>What Is AI?</h2>
-      <p class="intro">Artificial Intelligence (AI) describes computer systems designed to perform tasks that typically require human intelligence, such as learning, reasoning, understanding language, and solving problems.</p>
+      <h2>Overview</h2>
+      <p>Elonsreveswork is a contemporary corporate website that reflects the standards of modern executive brands. It projects confidence and professionalism while remaining flexible and easy to maintain.</p>
     </section>
 
-    <section id="future">
-      <h2>What About SI?</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Artificial Intelligence</h3>
-          <p>AI already helps people create, learn, communicate, research, and solve real-world problems.</p>
-        </article>
-        <article class="card">
-          <h3>Super Intelligence</h3>
-          <p>Super Intelligence is a proposed concept for intelligence that could exceed human abilities across many important fields. It remains a subject of research and debate.</p>
-        </article>
-        <article class="card">
-          <h3>The Big Question</h3>
-          <p>As these systems advance, how should we describe them, understand their limits, and make sure they benefit humanity?</p>
-        </article>
+    <section id="services">
+      <h2>Core Capabilities</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin-top:0">Strategic Positioning</h3>
+          <p style="margin:0;color:var(--muted)">Clear, compelling messaging that highlights leadership, expertise, and market differentiation.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Executive Communications</h3>
+          <p style="margin:0;color:var(--muted)">Concise narratives for stakeholders, investors, and clients—crafted for clarity and impact.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Case Studies & Trust Signals</h3>
+          <p style="margin:0;color:var(--muted)">Selected projects, client results, and endorsements that demonstrate measurable outcomes.</p>
+        </div>
       </div>
     </section>
 
-    <section id="conversation" class="question">
-      <h2>Should We Move From AI to SI?</h2>
-      <p>Some people believe the term “Super Intelligence” could better describe a possible future of increasingly capable intelligent systems. Others believe AI remains the clearest and most accurate term today.</p>
-      <p><strong>What's your view?</strong> Is AI the right name for the future, or should we start a conversation about SI?</p>
-      <a class="button" href="mailto:hello@example.com?subject=AI%20to%20SI%20Discussion">Share Your Thoughts by Email</a>
+    <section id="approach">
+      <h2>Design & Experience</h2>
+      <p style="color:var(--muted)">Minimal, refined visual systems—premium typography, restrained palettes, and considered layouts that communicate authority without excess.</p>
     </section>
-  </main>
 
-  <footer>
-    <p>AI → SI | Exploring the future of intelligence</p>
-    <p>Think critically. Ask questions. Build responsibly.</p>
-  </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color:var(--muted)">For executive inquiries, partnerships, or consultations, please reach out:</p>
+      <p style="margin-top:8px"><a href="mailto:hello@example.com" style="color:var(--accent);text-decoration:none">hello@example.com</a></p>
+    </section>
+
+    <footer>
+      © Elonsreveswork — Executive Digital Presence
+    </footer>
+  </div>
 </body>
-  </html>
+</html>
